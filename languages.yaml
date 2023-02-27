@@ -1,0 +1,35 @@
+en:
+  PLUGIN_CNB_EXCHANGE_RATES:
+    SEQUENCE_LABEL: Sequence
+    SEQUENCE_OPTION_EN_CS: English major, Czech minor
+    SEQUENCE_OPTION_CS_EN: Czech major, English minor
+    SEQUENCE_OPTION_EN: English only
+    SEQUENCE_OPTION_CS: Czech only
+    SEQUENCE_HELP: Processing priority of source files
+    SOURCE_EN_LABEL: English data source
+    SOURCE_EN_HELP: Exchange rates of commonly traded currencies available on the CNB website in text format in English
+    SOURCE_CS_LABEL: Czech data source
+    SOURCE_CS_HELP: Exchange rates of commonly traded currencies available on the CNB website in text format in Czech
+    COUNTRY: Country
+    CURRENCY: Currency
+    AMOUNT: Amount
+    CODE: Code
+    RATE: Rate
+
+cs:
+  PLUGIN_CNB_EXCHANGE_RATES:
+    SEQUENCE_LABEL: Sekvence
+    SEQUENCE_OPTION_EN_CS: Angličtina hlavní, čeština vedlejší
+    SEQUENCE_OPTION_CS_EN: Čeština hlavní, angličtina vedlejší
+    SEQUENCE_OPTION_EN: Pouze angličtina
+    SEQUENCE_OPTION_CS: Pouze čeština
+    SEQUENCE_HELP: Priorita zpracování zdrojových souborů
+    SOURCE_EN_LABEL: Anglický zdroj dat
+    SOURCE_EN_HELP: Směnné kurzy běžně obchodovaných měn dostupné na webu ČNB v textovém formátu v angličtině
+    SOURCE_CS_LABEL: Český zdroj dat
+    SOURCE_CS_HELP: Směnné kurzy běžně obchodovaných měn dostupné na webu ČNB v textovém formátu v češtině
+    COUNTRY: Země
+    CURRENCY: Měna
+    AMOUNT: Množství
+    CODE: Kód
+    RATE: Kurz

@@ -1,0 +1,52 @@
+name: CNB Exchange Rates
+slug: cnb-exchange-rates
+type: plugin
+version: 1.0.0
+description: The CNB Exchange Rates plugin obtains information about current exchange rates from source files published by the Czech National Bank (CNB) and subsequently provides their outputs.
+icon: money
+author:
+  name: Vít Petira
+  email: petira@grav.cz
+  url: https://www.grav.cz
+homepage: https://github.com/petira/grav-plugin-cnb-exchange-rates
+demo: https://www.grav.cz/demo/cnb-exchange-rates
+keywords: grav, plugin, cnb, exchange, rates, currency, money, czk, petira
+bugs: https://github.com/petira/grav-plugin-cnb-exchange-rates/issues
+docs: https://github.com/petira/grav-plugin-cnb-exchange-rates/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    sequence:
+      type: select
+      size: large
+      label: PLUGIN_CNB_EXCHANGE_RATES.SEQUENCE_LABEL
+      default: en_cs
+      options:
+        en_cs: PLUGIN_CNB_EXCHANGE_RATES.SEQUENCE_OPTION_EN_CS
+        cs_en: PLUGIN_CNB_EXCHANGE_RATES.SEQUENCE_OPTION_CS_EN
+        en: PLUGIN_CNB_EXCHANGE_RATES.SEQUENCE_OPTION_EN
+        cs: PLUGIN_CNB_EXCHANGE_RATES.SEQUENCE_OPTION_CS
+      help: PLUGIN_CNB_EXCHANGE_RATES.SEQUENCE_HELP
+    source_en:
+      type: text
+      label: PLUGIN_CNB_EXCHANGE_RATES.SOURCE_EN_LABEL
+      help: PLUGIN_CNB_EXCHANGE_RATES.SOURCE_EN_HELP
+    source_cs:
+      type: text
+      label: PLUGIN_CNB_EXCHANGE_RATES.SOURCE_CS_LABEL
+      help: PLUGIN_CNB_EXCHANGE_RATES.SOURCE_CS_HELP
